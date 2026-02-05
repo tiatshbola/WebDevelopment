@@ -3,8 +3,11 @@
 <h1> Web Development Portfolio 2026 </h1>
 Live Website: https://tiatshbola.github.io/WebDevelopment/
 
-About This Project
-A single-page portfolio website built over 10 weeks, showcasing creative work and weekly tasks through an accessible, scroll-based interface. The site demonstrates HTML, CSS, JavaScript, and accessibility implementation developed iteratively throughout the term.
+<h2> About This Project</h2>
+<body>
+  A single-page portfolio website built over 10 weeks, showcasing creative work and weekly tasks through an accessible, scroll-based interface. The site demonstrates HTML, CSS, JavaScript, and accessibility implementation developed iteratively throughout the term.
+</body>
+
 
 Weekly Tasks
 9 weekly tasks completed across the term, each building on previous learning:
