@@ -249,6 +249,7 @@ summary {
   grid-template-columns: repeat(4, max-content);
   gap: 2rem 4rem;
   justify-content: center;
+  text-align: center;
 }
 
 .weeks-grid a {
