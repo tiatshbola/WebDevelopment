@@ -11,21 +11,21 @@ Live Website: https://tiatshbola.github.io/WebDevelopment/
 
 <h2> Weekly Tasks</h2>
  
-9 weekly tasks completed across the term, each building on previous learning:
+<body> 9 weekly tasks completed across the term, each building on previous learning:
 
 Weeks 1-4: HTML structure, CSS styling, responsive design, JavaScript fundamentals
-Weeks 5-9: Advanced techniques, DOM manipulation, accessibility, animations, cross-platform testing
+Weeks 5-9: Advanced techniques, DOM manipulation, accessibility, animations, cross-platform testing </body>
 
 Each task folder includes source code,  and design iterations.
 
 <h2>Technologies</h2>
 
-HTML5 - Semantic structure with ARIA labels
+<body>HTML5 - Semantic structure with ARIA labels
 CSS3 - Flexbox/Grid layouts, responsive design
 JavaScript (ES6+) - DOM manipulation, interactive features
 GSAP + ScrollTrigger - Scroll-based animations
 Figma - Design prototyping
-Lighthouse - Accessibility testing
+Lighthouse - Accessibility testing </body>
 
 <h2>Key Features<h2>
 Design & UX
@@ -53,7 +53,7 @@ Smooth scroll navigation
 Contact form
 GSAP scroll animations</body>
 
-References
+<h2>References</h2>
 
 <body>Brutalist Websites
 Daniel Oduntan Portfolio
