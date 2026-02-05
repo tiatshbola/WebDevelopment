@@ -47,11 +47,11 @@ Dark mode option </body>
 
 <h2>Interactive Elements</h2>
 
-<body>Mobile hamburger menu
+<body> Mobile hamburger menu
 Dark/light mode toggle
 Smooth scroll navigation
 Contact form
-GSAP scroll animations</body>
+GSAP scroll animations </body>
 
 <h2>References</h2>
 
