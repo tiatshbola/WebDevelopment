@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tia T — Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">Tia T</div>
+    <ul class="nav-links">
+      <li><a href="#projects" aria-label="Project Section">projects</a></li>
+      <li><a href="#about" aria-label="About Section">about</a></li>
+      <li><a href="#email" aria-label="Email Section">email</a></li>
+      <li class="nightmode" role="button" aria-label="Toggle dark mode" tabindex="0" id="modeToggle">🌜</li>
+    </ul>
+  </nav>
+
+  <!-- HAMBURGER NAV -->
+  <nav id="hamburger-nav">
+    <div class="logo">Tia T</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+
+      <ul class="menu-links">
+        <li><a href="#projects" aria-label="Project Section" onclick="toggleMenu()">projects</a></li>
+        <li><a href="#about" aria-label="About Section" onclick="toggleMenu()">about</a></li>
+        <li><a href="#email" aria-label="Email Section" onclick="toggleMenu()">email</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about" aria-label="About Tia Tshabola">
+    <p class="section__text__p1 intro">
+      Tia Tshabola is a London-based creative technologist, engineer, and VJ crafting high-impact immersive
+      experiences at the intersection of sound, culture, and technology.
+    </p>
+
+    <p class="section__text__p1">
+      Working across visual design, creative direction, and live performance, she collaborates with artists,
+      studios, and cultural institutions to create work that centers joy, reflection, and culture. As the owner
+      of New Vision Studio, Tia develops commissioned and self-initiated projects spanning concert visuals,
+      interactive installations, physical prototyping, and experimental gallery experiences.
+    </p>
+
+    <p class="section__text__p1">
+      Currently studying at UAL’s Creative Computing Institute, her work explores how technology can be a tool
+      for cultural expression—building new visual narratives that reflect the future of Black British creativity.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="page">
+    <h1 class="title" aria-label="Projects of Tia Tshabola">Projects</h1>
+
+    <div class="experience-details-container">
+      <div class="project-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/tsobbj.jpeg" alt="The Black British School Of Joy" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">The Black British School Of Joy</h2>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <a href="https://www.instagram.com/p/DPzWNQlDPze/?img_index=1">
+              <img src="assets/jeleelshow.png" alt="Jeleel Live Headline Show 2025" class="project-img" />
+            </a>
+          </div>
+          <h2 class="experience-sub-title project-title">Jeleel Oct 2025 Live Show</h2>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <a href="https://www.instagram.com/p/DOmUVk8jIkG/?img_index=1">
+              <img src="assets/lilsimzfree.png" alt="Lil Simz Free Visualiser" class="project-img" />
+            </a>
+          </div>
+          <h2 class="experience-sub-title project-title">Lil Simz Free Visualiser</h2>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <a href="https://www.instagram.com/p/DMeTCQoiEKQ/?img_index=1">
+              <img src="assets/jip.png" alt="Joy In Pain Experimental Visualiser" class="project-img" />
+            </a>
+          </div>
+          <h2 class="experience-sub-title project-title">Joy In Pain</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEEKS -->
+<section id="weeks" aria-label="Weekly portfolio">
+  <div class="weeks-grid">
+    <button data-src="./allweeks/1/hr2accesiblehtml.html">week 1</button>
+    <button data-src="./allweeks/week2/week2email.html">week 2</button>
+    <button data-src="./allweeks/week3/week3.html">week 3</button>
+    <button data-src="./allweeks/week44/week4.html">week 4</button>
+    <button data-src="./allweeks/week55/week5.html">week 5</button>
+    <button data-src="./allweeks/week6/week6.html">week 6</button>
+    <button data-src="./allweeks/week7or8/week7or8.html">week 7</button>
+    <button data-src="./allweeks/week7or8/week7or8.html">week 8</button>
+    <button data-src="./allweeks/week9marysia/week9.html">week 9</button>
+    <button data-src="./allweeks/week10/week10.html">week 10</button>
+  </div>
+
+  <div class="weeks-viewer">
+    <iframe id="weekFrame" title="Weekly work" loading="lazy"></iframe>
+  </div>
+</section>
+ 
+
+  <!-- EMAIL -->
+  <section id="email">
+    <h1 class="title">Get In Touch</h1>
+    <p class="emailaddy"><a href="mailto:ch7ntel@gmail.com">ch7ntel@gmail.com</a></p>
+
+    <form id="contact-form" method="post" action="">
+      <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+      <input name="email" aria-label="Tia Tshabola's Email" type="email" class="form-control" placeholder="Your Email" required><br>
+      <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+      <input type="submit" class="form-control submit" value="SEND MESSAGE">
+    </form>
+  </section>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Your JS -->
+  <script src="./script.js"></script>
+</body>
+</html>
