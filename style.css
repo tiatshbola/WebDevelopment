@@ -1,4 +1,4 @@
-/* GENERAL */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* THEME VARS */
+/* for day and night mode. more efficient. */
 :root {
   --bg-color: white;
   --font-color: black;
@@ -37,8 +37,7 @@ a,
   transition: all 300ms ease;
   color: var(--font-color);
 }
-
-/* FIXED LINK STYLES (your original had invalid `color: color:`) */
+ /*color var for night and dark mode*/
 a {
   color: var(--font-color);
   text-decoration: none;
@@ -49,7 +48,7 @@ a:hover {
   color: grey;
 }
 
-/* NAV */
+/* nav */
 nav,
 .nav-links {
   display: flex;
@@ -67,7 +66,7 @@ nav {
   font-size: 1.5rem;
 }
 
-/* Night mode button */
+/* night mode*/
 .nightmode {
   color: grey;
   font-size: 1.5rem;
@@ -78,7 +77,7 @@ nav {
   user-select: none;
 }
 
-/* Logo */
+/* logo */
 .logo {
   font-size: 2rem;
 }
@@ -87,7 +86,7 @@ nav {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
+/* hamburger menu */
 #hamburger-nav {
   display: none;
 }
@@ -108,7 +107,7 @@ nav {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: var(--font-color); /* FIXED (you had var(var(--bg-color)) + 'color:' error) */
+  background-color: var(--font-color); 
   transition: all 0.3s ease-in-out;
 }
 
@@ -143,7 +142,7 @@ nav {
   max-height: 300px;
 }
 
-/* Hamburger open animation (your JS should toggle class 'open' on .hamburger-icon) */
+/* hamburger open animation */
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
@@ -156,7 +155,7 @@ nav {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-/* Ensure default state */
+/* default state */
 .hamburger-icon span {
   transform: none;
   opacity: 1;
@@ -166,7 +165,7 @@ summary {
   list-style: none;
 }
 
-/* ABOUT */
+/* about */
 #about {
   max-width: 900px;
   margin: 0 auto;
@@ -184,36 +183,36 @@ summary {
   line-height: 1.7;
 }
 
-/* PROJECTS — IMPORTANT CHANGES FOR HORIZONTAL PAN */
+/* project */
 #projects {
-  padding: 4rem 0;     /* no side padding so pan feels big */
-  width: 100vw;        /* full viewport width */
-  overflow: hidden;    /* hides sideways motion edges */
+  padding: 4rem 0;    
+  width: 100vw;       
+  overflow: hidden;   
 }
 
-/* Title remains centered */
+/* title center */
 .title {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 4rem;
-  padding: 0 2rem;     /* keep readable margin while section is full width */
+  padding: 0 2rem;     /*  to keep readable margin while section is full width */
 }
 
-/* Track that GSAP will pan */
+/* tracker so that the gsap pans*/
 .experience-details-container {
-  width: 130vw;        /* wider than viewport so motion is visible */
-  margin-left: -15vw;  /* recenters the wider track */
+  width: 130vw;        
+  margin-left: -15vw;  
   will-change: transform;
 }
 
-/* Keep your grid layout */
+/* grid layout. */
 .project-containers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;     /* keep grid off edges while the track pans */
+  padding: 0 2rem;     
 }
 
 .details-container {
@@ -247,7 +246,7 @@ summary {
   padding: 2rem 2rem;
 }
 
-/* TEXT GRID */
+/* text grid */
 .weeks-grid {
   display: grid;
   grid-template-columns: repeat(4, max-content);
@@ -265,17 +264,17 @@ summary {
   cursor: pointer;
   text-transform: lowercase;
 }
-
+/*hover*/
 .weeks-grid button:hover {
   opacity: 0.6;
 }
 
-/* active week */
+/*  weeks aesthetic */
 .weeks-grid button.active {
   text-decoration: underline;
 }
 
-/* EMBED VIEWER */
+/* weeks viewer, iframe */
 .weeks-viewer {
   width: 100%;
   height: 80vh;
@@ -290,7 +289,7 @@ summary {
 }
 
 
-/* EMAIL */
+/* email */
 #email {
   padding: 6rem 2rem;
 }
@@ -301,7 +300,7 @@ summary {
   text-align: center;
 }
 
-/* Form section (your existing) */
+/* form */
 .contact-title {
   margin-top: 100px;
   color: var(--font-color);
@@ -336,7 +335,7 @@ form {
   padding: 10px 6px;
 }
 
-/* PERFORMANCE (GSAP smoothness) */
+/* gsap */
 #about .intro,
 #projects .title,
 #email .title,
@@ -345,7 +344,6 @@ form {
   will-change: transform;
 }
 
-/* OPTIONAL: basic responsive tweaks */
 @media (max-width: 900px) {
   .project-containers {
     grid-template-columns: 1fr;
