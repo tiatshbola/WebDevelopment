@@ -30,32 +30,32 @@ Lighthouse - Accessibility testing
 <h2>Key Features<h2>
 Design & UX
 
-Single-page scroll navigation
+<body> Single-page scroll navigation
 Responsive across devices
 Minimal/brutalist aesthetic
 Dark mode toggle
-Motion-considerate animations
+Motion-considerate animations</body>
 
-Accessibility (Score: 95/100)
+<h2>Accessibility (Score: 95/100)</h2>
 
-Semantic HTML structure
+<body> Semantic HTML structure
 ARIA labels on interactive elements
 Keyboard navigation support
 Alt text on all images
 High contrast ratios
-Dark mode option
+Dark mode option </body>
 
 <h2>Interactive Elements<h2>
 
-Mobile hamburger menu
+<body>Mobile hamburger menu
 Dark/light mode toggle
 Smooth scroll navigation
 Contact form
-GSAP scroll animations
+GSAP scroll animations</body>
 
 References
 
-Brutalist Websites
+<body>Brutalist Websites
 Daniel Oduntan Portfolio
 WCAG Guidelines
-GSAP Documentation    
+GSAP Documentation    </body>
