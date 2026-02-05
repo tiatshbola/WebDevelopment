@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.explain {
+  max-width: 320px;
+  text-align: left;
+  opacity: 0.85;
+}
+
+.clock {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
