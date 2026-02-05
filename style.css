@@ -1,0 +1,373 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* for day and night mode. more efficient. */
+:root {
+  --bg-color: white;
+  --font-color: black;
+}
+
+[theme="dark"] {
+  --bg-color: black;
+  --font-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+p {
+  color: var(--font-color);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+  color: var(--font-color);
+}
+ /*color var for night and dark mode, read root above*/
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  text-decoration-color: var(--font-color);
+}
+
+a:hover {
+  color: grey;
+}
+
+/* nav */
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+/* night mode*/
+.nightmode {
+  color: grey;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-style: italic;
+  transform: rotate(-10deg);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* logo */
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* hamburger menu */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--font-color); 
+  transition: all 0.3s ease-in-out;
+}
+
+/* menu dropdown */
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--bg-color);
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--font-color);
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px 14px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--font-color);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+/* hamburger open animation */
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* default state */
+.hamburger-icon span {
+  transform: none;
+  opacity: 1;
+}
+
+summary {
+  list-style: none;
+}
+
+/* about */
+#about {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 6rem 2rem;
+}
+
+.intro {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+#about .section__text__p1 {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* project */
+#projects {
+  padding: 4rem 0;    
+  width: 100vw;       
+  overflow: hidden;   
+}
+
+/* title center */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  padding: 0 2rem;     
+}
+
+/* tracker so that the gsap pans*/
+.experience-details-container {
+  width: 130vw;        
+  margin-left: -15vw;  
+  will-change: transform;
+}
+
+/* grid layout. */
+.project-containers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;     
+}
+
+.details-container {
+  width: 100%;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  border: 1px solid var(--font-color);
+}
+
+.article-container {
+  width: 100%;
+  height: 100%;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#weeks {
+  width: 100vw;
+  height: 200vh;
+  padding: 2rem 2rem;
+}
+
+/* text grid */
+.weeks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 1.5rem 3rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.weeks-grid button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--font-color);
+  cursor: pointer;
+  text-transform: lowercase;
+}
+/*hover*/
+.weeks-grid button:hover {
+  opacity: 0.6;
+}
+
+/*  weeks aesthetic */
+.weeks-grid button.active {
+  text-decoration: underline;
+}
+
+/* weeks viewer, iframe */
+.weeks-viewer {
+  width: 100%;
+  height: 80vh;
+  border-top: 1px solid var(--font-color);
+}
+
+.weeks-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+a {
+  display: block;
+  margin: 6px 0;
+}
+
+
+/* email */
+#email {
+  padding: 6rem 2rem;
+}
+
+.emailaddy {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* form */
+.contact-title {
+  margin-top: 100px;
+  color: var(--font-color);
+  text-transform: uppercase;
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.contact-title h2 {
+  font-size: 16px;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.form-control {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--font-color);
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--font-color);
+  padding: 10px 6px;
+}
+
+/* gsap */
+#about .intro,
+#projects .title,
+#email .title,
+#email .emailaddy,
+#projects .experience-details-container {
+  will-change: transform;
+}
+
+@media (max-width: 900px) {
+  .project-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    font-size: 1.2rem;
+    gap: 1.2rem;
+  }
+
+  .title {
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #about {
+    padding: 5rem 1.5rem;
+  }
+
+  .intro {
+    font-size: 1.6rem;
+  }
+}
