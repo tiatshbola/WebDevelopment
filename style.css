@@ -288,6 +288,11 @@ summary {
   display: block;
 }
 
+.weeks a{
+  display: block;
+  margin: 8px 0;
+}
+
 
 /* email */
 #email {
