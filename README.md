@@ -45,7 +45,7 @@ Alt text on all images
 High contrast ratios
 Dark mode option </body>
 
-<h2>Interactive Elements<h2>
+<h2>Interactive Elements</h2>
 
 <body>Mobile hamburger menu
 Dark/light mode toggle
@@ -55,7 +55,7 @@ GSAP scroll animations</body>
 
 <h2>References</h2>
 
-<body>Brutalist Websites
+<body> Brutalist Websites
 Daniel Oduntan Portfolio
 WCAG Guidelines
 GSAP Documentation    </body>
