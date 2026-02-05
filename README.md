@@ -9,7 +9,8 @@ Live Website: https://tiatshbola.github.io/WebDevelopment/
 </body>
 
 
-Weekly Tasks
+<h2> Weekly Tasks</h2>
+ 
 9 weekly tasks completed across the term, each building on previous learning:
 
 Weeks 1-4: HTML structure, CSS styling, responsive design, JavaScript fundamentals
@@ -17,7 +18,7 @@ Weeks 5-9: Advanced techniques, DOM manipulation, accessibility, animations, cro
 
 Each task folder includes source code,  and design iterations.
 
-Technologies
+<h2>Technologies</h2>
 
 HTML5 - Semantic structure with ARIA labels
 CSS3 - Flexbox/Grid layouts, responsive design
@@ -26,7 +27,7 @@ GSAP + ScrollTrigger - Scroll-based animations
 Figma - Design prototyping
 Lighthouse - Accessibility testing
 
-Key Features
+<h2>Key Features<h2>
 Design & UX
 
 Single-page scroll navigation
@@ -44,7 +45,7 @@ Alt text on all images
 High contrast ratios
 Dark mode option
 
-Interactive Elements
+<h2>Interactive Elements<h2>
 
 Mobile hamburger menu
 Dark/light mode toggle
