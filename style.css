@@ -241,60 +241,25 @@ summary {
 }
 
 #weeks {
-  width: 100vw;
-  height: 200vh;
-  padding: 2rem 2rem;
+  padding: 6rem 2rem;
 }
 
-/* text grid */
 .weeks-grid {
   display: grid;
   grid-template-columns: repeat(4, max-content);
-  gap: 1.5rem 3rem;
+  gap: 2rem 4rem;
   justify-content: center;
-  margin-bottom: 4rem;
 }
-
-.weeks-grid button {
-  background: none;
-  border: none;
-  padding: 0;
-  font: inherit;
-  color: var(--font-color);
-  cursor: pointer;
-  text-transform: lowercase;
-}
-/*hover*/
-.weeks-grid button:hover {
-  opacity: 0.6;
-}
-
-/*  weeks aesthetic */
-.weeks-grid button.active {
-  text-decoration: underline;
-}
-
-/* weeks viewer,  */
-
 
 .weeks-grid a {
-  background: none;
-  border: none;
-  padding: 0;
-  font: inherit;
+  font-size: 1.5rem;
   color: var(--font-color);
-  cursor: pointer;
-  text-transform: lowercase;
   text-decoration: none;
+  text-transform: lowercase;
 }
 
 .weeks-grid a:hover {
   opacity: 0.6;
-}
-
-.weeks a{
-  display: block;
-  margin: 8px 0;
 }
 
 
